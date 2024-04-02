@@ -1,6 +1,7 @@
-import { Diversity } from 'styled-icons/fluentui-system-filled';
 import './App.css'
 import SpaIcon from '@mui/icons-material/Spa';
+import { Container } from '@mui/material';
+
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
           </h1>
       </div>
       <div className=' h-[54px] w-auto bg-[#00AFF1] flex flex-row gap-3 font-semibold text-xl text-[#f1f1f1] items-center justify-between'>
-        <div className='bg-transparent ml-5 flex flex-row gap-3'>
-          <a className='bg-transparent'>SOBRE</a>
-          <a className='bg-transparent'>PROJETOS</a>
+        <div className='bg-transparent ml-28 flex flex-row gap-5'>
+          <a className='bg-transparent border-b-2 border-slate-300 hover:border-slate-800 cursor-pointer'>SOBRE</a>
+          <a className='bg-transparent border-b-2 border-slate-300 hover:border-slate-800 cursor-pointer'>PROJETOS</a>
         </div>
         <div className='flex flex-row'>
           <a><img className='h-auto w-auto' src="/ico-facebook.svg" alt="facebook" /></a>
@@ -25,7 +26,9 @@ function App() {
         </div>
       </div>
       <div>
-        <img src="" alt="" />
+        <Container fixed>
+          <img src="teste.jpg" alt="teste" />
+        </Container>
       </div>
     </div>
   )
